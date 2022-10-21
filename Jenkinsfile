@@ -15,11 +15,5 @@ pipeline {
                       npm test"""
             }
         }
-        stage('npm test'){
-           steps {
-            sh 'node test'
-             
-           }
-        }    
     }
 }    
