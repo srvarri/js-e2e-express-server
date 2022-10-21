@@ -14,12 +14,5 @@ pipeline {
                       npm run build"""
             }
         }
-
-        stage('npm reports') {
-            steps {
-                junit 'src/**/*.js'
-            }
-        }
     }
-}        
-		
+}    
