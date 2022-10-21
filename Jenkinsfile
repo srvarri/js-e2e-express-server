@@ -17,7 +17,7 @@ pipeline {
 
         stage('npm reports') {
             steps {
-                junit 'src/**/*.js'
+                sh 'src/**/*.js'
             }
         }
     }
