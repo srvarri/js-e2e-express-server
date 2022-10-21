@@ -17,7 +17,7 @@ pipeline {
 
         stage('npm reports') {
             steps {
-                npm test 'src/**/*.js'
+                 ArchiveResults 'src/**/*.js'
             }
         }
     }
