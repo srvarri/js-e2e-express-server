@@ -16,7 +16,7 @@ pipeline {
         }
         stage('npm test'){
            steps {
-            node test 'src/**/*.js'
+            test 'src/**/*.js'
              
            }
         }    
