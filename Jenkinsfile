@@ -11,12 +11,13 @@ pipeline {
             steps {
                 sh """export PATH="/home/ubuntu/.nvm/versions/node/v16.18.0/bin:$PATH"
                       npm install
-                      npm run build"""
+                      npm run build
+                      npm test"""
             }
         }
         stage('npm test'){
            steps {
-            test 'src/**/*.js'
+            sh 'node test'
              
            }
         }    
