@@ -14,5 +14,10 @@ pipeline {
                       npm run build"""
             }
         }
+        stage('npm test'){
+           steps {
+            sh 'npm test'
+           }
+        }    
     }
 }    
