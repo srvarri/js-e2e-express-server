@@ -17,7 +17,7 @@ pipeline {
 
         stage('npm reports') {
             steps {
-                sh 'src/**/*.js'
+                npm test 'src/**/*.js'
             }
         }
     }
